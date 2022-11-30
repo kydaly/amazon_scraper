@@ -22,7 +22,7 @@ def price_finder(interval=1):
     excel document."""
 
     # reciever is device that is recieving the notification
-    reciever = '6263672354@vzwpix.com'
+    reciever = 'phone#@vzwpix.com'
     # reads in data from an excel file and stores it as a dataframe
     item_tracker = pd.read_excel('Amazon_scraper.xlsx', 'Sheet1')
     # reads in columns under each name on spreadsheet (eg. url, code, price)
