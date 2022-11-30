@@ -22,6 +22,9 @@ def price_finder(interval=1):
     excel document."""
 
     # reciever is device that is recieving the notification
+    # digitaltrends.com/mobile/how-to-send-a-text-from-your-email-account/
+    # the above link shows the text after your phone number to put depending
+    # on your carrier if you are located in the USA
     reciever = 'phone#@vzwpix.com'
     # reads in data from an excel file and stores it as a dataframe
     item_tracker = pd.read_excel('Amazon_scraper.xlsx', 'Sheet1')
