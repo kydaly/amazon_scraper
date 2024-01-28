@@ -26,7 +26,7 @@ def price_finder(interval=1):
     # digitaltrends.com/mobile/how-to-send-a-text-from-your-email-account/
     # the above link shows the text after your phone number to put depending
     # on your carrier if you are located in the USA
-    reciever = '6263672354@vzwpix.com'
+    reciever = <phone_number+carrier_text>
     item_tracker = pd.read_excel('Amazon_scraper.xlsx', 'Sheet1')
 
     # reads in columns under each name on spreadsheet (eg. url, code, price)
