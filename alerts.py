@@ -1,7 +1,7 @@
 import smtplib
 from email.message import EmailMessage
 
-def alert(subject, body, url, to):
+def alert(subject, body, to):
     msg = EmailMessage()
     msg.set_content(body)
     msg.set_content(url)
@@ -22,4 +22,4 @@ def alert(subject, body, url, to):
 
 # tests if function runs
 if __name__ == '__main__':
-    alert("subject", "body", "url", 'to')
+    alert("subject", "body", "to")

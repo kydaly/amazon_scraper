@@ -50,7 +50,7 @@ def price_finder(interval=1):
             # If price is lower than what is specified on the excel file a
             # notification is sent
             if num_price <= float(buy_price[x]):
-                alerts.alert(title[x], f'The price is {num_price}', url, reciever)
+                alerts.alert(title[x], f'The price is {num_price}\n {url}', reciever)
         except:
             price = ''
             try:
@@ -59,7 +59,7 @@ def price_finder(interval=1):
                 num_price = float(num_price)
                 print(f"num_price is {num_price}")
                 if num_price <= float(buy_price[x]):
-                    alerts.alert(title[x], f'The price is {num_price}', url, reciever)
+                    alerts.alert(title[x], f'The price is {num_price}\n {url}', reciever)
             except:
                 price = ''
                 print("Price is not available. Check website for HTML changes.")
