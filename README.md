@@ -1,2 +1,2 @@
 # amazon_scraper
-reads html data from amazon and notifies when price drops
+Reads html data from amazon for specific items on an excel sheetand notifies when price is equal to or less than the price specified in the excel sheet.
